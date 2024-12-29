@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي الشخصي</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0078d7;
+            color: white;
+            padding: 20px 0;
+        }
+        section {
+            margin: 20px;
+        }
+        button {
+            background-color: #0078d7;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>مرحبًا بك في موقعي الشخصي</h1>
+    </header>
+
+    <section>
+        <h2>من أنا؟</h2>
+        <p>اسمي <strong>فالس ترو</strong>. أنا مطور ويب ومهتم بالتكنولوجيا والبرمجة.</p>
+        <p>أحب تعلم أشياء جديدة ومشاركة معرفتي مع الآخرين.</p>
+    </section>
+
+    <section>
+        <h2>تشغيل الموسيقى</h2>
+        <p>تم تشغيل الموسيقى بصمت. اضغط على الزر أدناه لتفعيل الصوت.</p>
+        <audio id="music" src="your-music-file.mp3" autoplay muted></audio>
+        <button onclick="unmuteMusic()">تشغيل الصوت</button>
+    </section>
+
+    <footer>
+        <p>© 2024 جميع الحقوق محفوظة. تصميم بواسطة فالس ترو.</p>
+    </footer>
+
+    <script>
+        function unmuteMusic() {
+            const music = document.getElementById('music');
+            music.muted = false;
+            alert("تم تفعيل الصوت!");
+        }
+    </script>
+</body>
+  </html>
